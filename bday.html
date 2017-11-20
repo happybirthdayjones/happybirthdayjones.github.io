@@ -1,0 +1,123 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bday.css">
+</head>
+
+<body>
+<center>
+<img name="slide" width = 986 height = 652>
+</center>
+
+<center>
+	 <audio controls autoplay="">
+  		<source src="PIB.mp3" type="audio/mpeg">
+	</audio> 
+</center>
+</body>
+
+	<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = "i0.jpg";
+images[1] = "i1.jpg";
+images[2] = "i2.jpg";
+images[3] = "i3.jpg";
+images[4] = "i4.jpg";
+images[5] = "i5.jpg";
+images[6] = "i6.jpg";
+images[7] = "i7.jpg";
+images[8] = "i8.jpg";
+images[9] = "i9.jpg";
+images[10] = "i10.jpg";
+images[11] = "i11.jpg";
+images[12] = "i12.jpg";
+images[13] = "i13.jpg";
+images[14] = "i14.jpg";
+images[15] = "i15.jpg";
+images[16] = "i16.jpg";
+images[17] = "i17.jpg";
+images[18] = "i18.jpg";
+images[19] = "i19.jpg";
+images[20] = "i20.jpg";
+images[21] = "i21.jpg";
+images[22] = "i22.jpg";
+images[23] = "i23.jpg";
+images[24] = "i24.jpg";
+images[25] = "i25.jpg";
+images[26] = "i26.jpg";
+images[27] = "i27.jpg";
+images[28] = "i28.jpg";
+images[29] = "i29.jpg";
+images[30] = "i30.jpg";
+images[31] = "i31.jpg";
+images[32] = "i32.jpg";
+images[33] = "i33.jpg";
+images[34] = "i34.jpg";
+images[35] = "i35.jpg";
+images[36] = "i36.jpg";
+images[37] = "i37.jpg";
+images[38] = "i38.jpg";
+images[39] = "i39.jpg";
+images[40] = "i40.jpg";
+images[41] = "i41.jpg";
+images[42] = "i42.jpg";
+images[43] = "i43.jpg";
+images[44] = "i44.jpg";
+images[45] = "i45.jpg";
+images[46] = "i46.jpg";
+images[47] = "i47.jpg";
+images[48] = "i48.jpg";
+images[49] = "i49.jpg";
+images[50] = "i50.jpg";
+images[51] = "i51.jpg";
+images[52] = "i52.jpg";
+images[53] = "i53.jpg";
+images[54] = "i54.jpg";
+images[55] = "i55.jpg";
+images[56] = "i56.jpg";
+images[57] = "i57.jpg";
+images[58] = "i58.jpg";
+images[59] = "i59.jpg";
+images[60] = "i60.jpg";
+images[61] = "i61.jpg";
+images[62] = "i62.jpg";
+images[63] = "i63.jpg";
+images[64] = "i64.jpg";
+images[65] = "i65.jpg";
+images[66] = "i66.jpg";
+images[67] = "i67.jpg";
+images[68] = "i68.jpg";
+images[69] = "i69.jpg";
+images[70] = "i70.jpg";
+images[71] = "i71.jpg";
+images[72] = "i72.jpg";
+images[73] = "i73.jpg";
+images[74] = "i74.jpg";
+
+
+
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+	</script>
+</html>
